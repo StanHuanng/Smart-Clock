@@ -1,0 +1,139 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.39.0.0
+Copyright (C) 2023 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Stan Huang, HP Inc., LIC=NQQMA-1N86A-IIM5V-PNCY6-KWDZH-SZ288
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.39.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 5 (build 528)
+Assembler:       Armasm.exe V5.06 update 5 (build 528)
+Linker/Locator:  ArmLink.exe V5.06 update 5 (build 528)
+Library Manager: ArmAr.exe V5.06 update 5 (build 528)
+Hex Converter:   FromElf.exe V5.06 update 5 (build 528)
+CPU DLL:         SARMCM3.DLL V5.39.0.0
+Dialog DLL:      DARMCM1.DLL V1.19.6.0
+Target DLL:      UL2CM3.DLL V1.164.9.0
+Dialog DLL:      TARMCM1.DLL V1.14.6.0
+ 
+<h2>Project:</h2>
+C:\Project\赛元杯\code\20241215_1\20241215115149\Keil_C\Project\20241215115149.uvprojx
+Project File Date:  12/15/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 5 (build 528)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target '<20241215115149>'
+compiling RGB.c...
+assembling startup_sc32f10xx.s...
+compiling system_sc32f1xxx.c...
+compiling SC_Init.c...
+compiling CLOCK.c...
+..\User\CLOCK.c(96): warning:  #223-D: function "Key_GetState" declared implicitly
+  key=Key_GetState();
+..\User\CLOCK.c(104): warning:  #177-D: variable "menu_state"  was declared but never referenced
+  	int menu_state=5;
+..\User\CLOCK.c(105): warning:  #177-D: variable "menu_state0"  was declared but never referenced
+  	int menu_state0=5;
+..\User\CLOCK.c(106): warning:  #177-D: variable "menu_state1"  was declared but never referenced
+  	int menu_state1=0;
+..\User\CLOCK.c(107): warning:  #177-D: variable "menu_state2"  was declared but never referenced
+  	int menu_state2=0;	
+..\User\CLOCK.c: 5 warnings, 0 errors
+compiling LED.c...
+compiling sc32f1xxx_pwm.c...
+compiling Key.c...
+compiling sc32f1xxx_twi.c...
+compiling OLED.c...
+..\User\OLED.c(13): warning:  #223-D: function "OLED_ShowNum" declared implicitly
+  	OLED_ShowNum(1, 1, year, 4);//当前日期
+..\User\OLED.c(14): warning:  #223-D: function "OLED_ShowString" declared implicitly
+  	OLED_ShowString(1, 5, "/");
+..\User\OLED.c(44): warning:  #940-D: missing return statement at end of non-void function "OLED_Showtime" 
+  }
+..\User\OLED.c: 3 warnings, 0 errors
+compiling main.c...
+..\User\Key.h(7): error:  #130: expected a "{"
+  int Key_GetNum(void);
+..\User\main.c(49): warning:  #12-D: parsing restarts here after previous syntax error
+  {
+..\User\main.c: 1 warning, 1 error
+compiling CompCtrlDefine.c...
+compiling menu.c...
+..\User\menu.c(23): warning:  #223-D: function "OLED_ShowString" declared implicitly
+  OLED_ShowString(2,3,"Clock");
+..\User\menu.c(32): warning:  #223-D: function "OLED_ShowNum" declared implicitly
+  OLED_ShowNum(1, 5, hour, 2);//当前时间
+..\User\menu.c(39): warning:  #223-D: function "OLED_clock" declared implicitly
+  	OLED_clock();
+..\User\menu.c(94): warning:  #223-D: function "OLED_ShowString" declared implicitly
+  OLED_ShowString(2,3,"SetTime");
+..\User\menu.c(98): warning:  #223-D: function "OLED_ShowNum" declared implicitly
+  OLED_ShowNum(1, 5, hour, 2);//当前时间
+..\User\menu.c(104): warning:  #223-D: function "OLED_clock" declared implicitly
+  	OLED_clock();
+..\User\menu.c(155): warning:  #223-D: function "OLED_ShowString" declared implicitly
+  OLED_ShowString(2,3,"TongHua");
+..\User\menu.c(159): warning:  #223-D: function "OLED_ShowNum" declared implicitly
+  OLED_ShowNum(1, 5, hour, 2);//当前时间
+..\User\menu.c(165): warning:  #223-D: function "OLED_clock" declared implicitly
+  	OLED_clock();
+..\User\menu.c(228): warning:  #223-D: function "OLED_ShowString" declared implicitly
+  OLED_ShowString(2,3,"RGBsetting");
+..\User\menu.c(232): warning:  #223-D: function "OLED_ShowNum" declared implicitly
+  OLED_ShowNum(1, 5, hour, 2);//当前时间
+..\User\menu.c(238): warning:  #223-D: function "OLED_clock" declared implicitly
+  	OLED_clock();
+..\User\menu.c(293): warning:  #223-D: function "OLED_ShowString" declared implicitly
+  OLED_ShowString(1,3,"Settime");
+..\User\menu.c(300): warning:  #223-D: function "OLED_ShowNum" declared implicitly
+  OLED_ShowNum(2,4,hour,2);
+..\User\menu.c(305): warning:  #223-D: function "OLED_clock" declared implicitly
+  	OLED_clock();
+..\User\menu.c(369): warning:  #223-D: function "OLED_ShowString" declared implicitly
+  OLED_ShowString(1,3,"Snooze:");
+..\User\menu.c(428): warning:  #223-D: function "OLED_ShowNum" declared implicitly
+  OLED_ShowNum(1, 5, hour, 2);//当前时间
+..\User\menu.c(429): warning:  #223-D: function "OLED_ShowString" declared implicitly
+  OLED_ShowString(1, 7, ":");
+..\User\menu.c(443): warning:  #223-D: function "OLED_clock" declared implicitly
+  	OLED_clock();
+..\User\menu.c(481): warning:  #1-D: last line of file ends without a newline
+  /****二级菜单****/
+..\User\menu.c: 20 warnings, 0 errors
+compiling sc32f1xxx_gpio.c...
+compiling SC_it.c...
+compiling sc32f1xxx_option.c...
+compiling sc32f1xxx_tim.c...
+compiling Buzzer.c...
+..\User\Buzzer.c(81): warning:  #223-D: function "Delay" declared implicitly
+  	Delay(100*b);
+..\User\Buzzer.c(128): warning:  #223-D: function "OLED_ShowString" declared implicitly
+      	case 2747:OLED_ShowString(2,6,"-C");
+..\User\Buzzer.c: 2 warnings, 0 errors
+compiling CallBackFunction.c...
+compiling Motor.c...
+compiling IR.c...
+compiling sc32f1xxx_rcc.c...
+compiling SysFunVarDefine.c...
+"..\Output\20241215115149.axf" - 1 Error(s), 31 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: SinOne
+                https://www.socmcu.com/SinOne.SC32F1xxx_DFP.1.0.0.pack
+                SinOne::SC32F1xxx_DFP@1.0.0
+                SinOneMicroelectronics ARM Series Device Support
+
+<h2>Collection of Component include folders:</h2>
+  C:/Keil_v5/ARM/PACK/Keil/SC32F1xxx_DFP/1.0.6/Device/SC32F10xx/FWLib/SC32_Lib/inc
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
